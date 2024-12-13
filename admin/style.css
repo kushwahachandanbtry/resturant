@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dashboard{
+    padding: 22px;
+    background-color: gray;
+    display: flex;
+    gap: 50px;
+}
+.menu{
+    background: rgb(220, 218, 218);
+    width: 15%;
+    padding: 20px 27px;
+    height: 94vh;
+}
+.menu-icon{
+    display: none;
+}
+ /* Define a media query for mobile devices with a maximum width of 767px */
+ @media (max-width: 967px) {
+    /* Hide the menu on desktop devices */
+    .menu {
+      display: none;
+    }
+
+    /* Show the menu icon button on mobile devices */
+    .menu-icon {
+      display: block;
+      height: 35px;
+      font-size: 35px;
+      background: none;
+      color: #000;
+      background: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .menu{
+        position: absolute;
+        top: 101px;
+        left: 40px;
+        width: 60%;
+        height: auto;
+    }
+
+    .menu ul li{
+        list-style: none;
+        line-height: 5px;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0 !important;
+        cursor: pointer;
+        line-height: 25px !important;
+        background: #fff !important;
+    }
+    .menu ul li a{
+        font-size: 15px !important;
+        text-decoration: none;
+        color: #000 !important;
+        text-transform: uppercase;
+    }
+    .show{
+        display: block;
+    }
+    ul .logout {
+        margin-top: -38px !important;
+        margin-bottom: 10px;
+        margin-left: 80px !important;
+        width: 100px !important;
+    }   
+    .main-page h1 {
+        color: #b5b2b2;
+        font-size: 20px !important;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .main-page {
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(to right, black, rgb(66, 66, 66), black);
+        height: 90vh;
+        padding: 10px 0 !important;
+        border-radius: 20px;
+        height: auto !important;
+    }
+    .main-page p {
+        font-size: 15px !important;
+        font-style: normal !important;
+    }
+    .first-section label {
+        color: #0D6EFD;
+        font-size: 15px !important;
+        font-weight: 100;
+        font-style: italic;
+        margin: 30px 0;
+    }
+    select {
+        padding: 5px 0px !important;
+        font-size: 12px !important;
+    }
+    .first-section {
+        gap: 20px !important;
+    }
+    table{
+        width: 100% !important;
+        margin-left: -20px !important;
+    }
+    table tr th {
+        padding: 0px !important;
+        font-size: 10px !important;
+    }
+    table tr td {
+        padding: 4px !important;
+        font-size: 11px;
+    }
+    td button {
+        padding: 5px 4px !important;
+        border-radius: 5px !important;
+        font-size: 11px !important;
+    }
+  }
+
+  table{
+    width: 85%;
+  }
+.menu ul li{
+    list-style: none;
+    background: #0D6EFD;
+    line-height: 45px;
+    text-align: center;
+    margin: 15px 0;
+    width: 100%;
+    cursor: pointer;
+}
+.menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu ul li:hover{
+    background: blue;
+}
+
+.content{
+    width: 100%;
+    padding: 30px;
+    background: rgb(220, 218, 218);
+}
+
+.first-section{
+    display: flex;
+    gap: 90px;
+}
+
+.first-section input{
+    width: 100%;
+    padding: 5px 20px;
+}
+.first-section div{
+    padding: 30px 0;
+}
+.first-section select{
+    padding: 5px 90px;
+}
+.first-section label{
+    color: #0D6EFD;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 30px 0;
+}
+.first-section table{
+    width: 100%;
+}
+.first-section table tr td{
+    padding: 7px 90px;
+    font-size: 20px;
+}
+.btn{
+    display: flex;
+    gap: 40px;
+}
+p{
+    font-size: 30px;
+    color: purple;
+}
+table{
+    margin-left: 70px;
+}
+table tr th{
+    padding: 8px;
+}
+table tr td{
+    padding: 5px;
+}
+.main-page{
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, black, rgb(66, 66, 66),  black);
+    height: 90vh;
+    padding: 180px 0;
+    border-radius: 20px;
+}
+.main-page h1{
+    color: #b5b2b2;
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 900;
+}
+.main-page p{
+    width: 80%;
+    margin: auto;
+    color: gray;
+    font-style: italic;
+    padding: 10px;
+}
+
+td button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+td button a{
+    color: #fff;
+    text-decoration: none;
+}
+td button:hover{
+    background: #000;
+}
+.edit{
+    background: blue;
+}
+.delete{
+    background: red;
+}
+.edit-order{
+    width: 50%;
+    border: 1px solid red;
+    background-color: gray;
+    height: 70vh;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    border-radius: 30px;
+    /* display: none; */
+}
+.edit-order form{
+    width: 80%;
+    margin: auto;
+    padding: 80px;
+}
+.edit-order form input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.edit-order span{
+    background: red;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    font-size: 20px;
+    color: #fff;
+}
+.edit-order form label{
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+}
+.order-update{
+    padding: 5px 20px;
+    background-color: blue;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+.food{
+    padding: 10px 0;
+}
+.food table{
+    width: 80%;
+}
+.food-category{
+    display: flex;
+    gap: 400px;
+    padding: 80px 70px 10px 70px;
+}
+button{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.add-food{
+    display: none;
+}
+ul li{
+    list-style: none;
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+ul .logout{
+    margin-top: -20px;
+    margin-bottom: 10px;
+    width: 10%;
+    margin-left: 800px;
+}
+select{
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+}
+
+.add-food{
+    width: 60%;
+    border: 1px solid red;
+}
+.food-close-btn{
+    cursor: pointer;
+}
