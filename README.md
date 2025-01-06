@@ -1,4 +1,4 @@
-## resturant
+## Resturant Management System
 This is a resturant management system, it's used for managing resturant activities.
 
 ## Key Features:
