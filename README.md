@@ -17,4 +17,5 @@ This is a resturant management system, it's used for managing resturant activiti
 5. PHP
 
 ## Dashboard Access
--> Email : resturant@gmail.com,  Password : 1234
+* Email : resturant@gmail.com
+* Password : 1234
